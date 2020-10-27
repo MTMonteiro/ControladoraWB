@@ -43,45 +43,44 @@ export var dataSales = {
 export const chartDefaultOptions = {
 	
 
-	// scales:{
-	// 	// yAxes: [{
-	// 	// 	ticks: {
-	// 	// 		display: false,
-	// 	// 		maxTicksLimit: 5,
-	// 	// 		beginAtZero: true,
-	// 	// 	},
-	// 	// 	gridLines: {
-	// 	// 		drawBorder: false,
-	// 	// 		lineWidth: 0.9,
-	// 	// 		color: "rgba(0,0,0,0.4)",
-	// 	// 		tickMarkLength: 15,
-	// 	// 		zeroLineWidth: 2,
-	// 	// 		zeroLineColor: "rgba(0,0,0,0.5)"					
-	// 	// 	}
-	// 	// }],
-	// 	// xAxes: [{
-	// 	// 	type: 'time',
-	// 	// 	time: {
-	// 	// 		unit: 'minute',
-	// 	// 		displayFormats:{
-	// 	// 			minute: 'HH:mm'
-	// 	// 		},
-	// 	// 	},
-	// 	// 	gridLines: {
-	// 	// 		display: false,
-	// 	// 		drawBorder: false,
-	// 	// 		tickMarkLength: 15,
-	// 	// 	},
-	// 	// 	ticks:{
-	// 	// 		display: true,
-	// 	// 		autoSkip: true,
-  //   //     		maxTicksLimit: 15,
-  //   //     		beginAtZero: true
-	// 	// 	}
-	// 	// }]
-	// },
+	scales:{
+		// yAxes: [{
+		// 	ticks: {
+		// 		display: false,
+		// 		maxTicksLimit: 5,
+		// 		beginAtZero: true,
+		// 	},
+		// 	gridLines: {
+		// 		drawBorder: false,
+		// 		lineWidth: 0.9,
+		// 		color: "rgba(0,0,0,0.4)",
+		// 		tickMarkLength: 15,
+		// 		zeroLineWidth: 2,
+		// 		zeroLineColor: "rgba(0,0,0,0.5)"					
+		// 	}
+		// }],
+		xAxes: [{
+			// type: 'time',
+			time: {
+				// unit: 'minute',
+				displayFormats:{
+					minute: 'HH:mm'
+				},
+			 },
+			gridLines: {
+				display: false,
+				drawBorder: false,
+				tickMarkLength: 15,
+			},
+			ticks:{
+				display: true,
+				autoSkip: true,
+        		maxTicksLimit: 5,
+        		beginAtZero: true
+			}
+		}]
+	},
 
-	// maintainAspectRatio: false, 
 	
 	layout: {
 		padding:{
