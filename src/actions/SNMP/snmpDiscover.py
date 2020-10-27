@@ -7,7 +7,8 @@ import json
 array = []
 mib="1.3.6.1.4.1.14988.1.1.1.2.1.1"
 com="OnCorp*"
-awk = "awk -F: '{print$2}'"
+# awk = "awk -F: '{print$2}'"
+awk = "awk -F = '{print$2}' | awk -F: '{print$2}'"
 ip="10.200.0.24"
 
 with open('./mkt.txt') as arquivo:
@@ -33,7 +34,6 @@ for ip in IPs:
             macDecimal = re.findall("[0-9a-fA-F][0-9a-fA-F]", mac) #cada hex em uma lista
             
             potencia_oid = f"1.3.6.1.4.1.14988.1.1.1.2.1.3.{hexToDecimal(macDecimal)}.1"
-
             potencia = os.popen(f"snmpwalk -c {com} -v 2c {ip} {potencia_oid} | {awk} ").read()
             potencia = potencia.rstrip("\n")
             d = {"mac": mac, "ap": ip, "potencia": potencia}

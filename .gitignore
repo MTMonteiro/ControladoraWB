@@ -11,6 +11,9 @@
 # production
 /build
 
+/src/actions/SNMP/test.json
+/src/data/file.json
+
 # misc
 .DS_Store
 .env.local
