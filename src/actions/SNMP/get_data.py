@@ -49,6 +49,7 @@ for ip in lines:
     loop.update(1)
     
 d["label1"].append(hora)
+d["tx"] = int(int(snmp_get("179.97.49.101", "1.3.6.1.2.1.2.2.1.16.12"))/1048576)
 print(d)
 #result.seek(0)
 
@@ -56,3 +57,9 @@ with open("../../data/file.json", "w+") as result:
     json.dump(d, result, indent=4)
 
 print("dados coletados")
+
+
+"""
+iso.3.6.1.2.1.17.4.3.1.1.64.6.160.133.154.85 = Hex-STRING: 40 06 A0 85 9A 55 
+iso.3.6.1.2.1.17.7.1.2.2.1.1.0.64.6.160.133.154.85 = Hex-STRING: 40 06 A0 85 9A 55 
+"""
