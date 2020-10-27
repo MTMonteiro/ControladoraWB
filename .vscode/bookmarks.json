@@ -1,0 +1,22 @@
+[
+	{
+		"path": "$ROOTPATH$/src/actions/SVG/MapSvg.js",
+		"bookmarks": [
+			{
+				"line": 907,
+				"column": 20,
+				"label": ""
+			}
+		]
+	},
+	{
+		"path": "$ROOTPATH$/src/views/Dashboard.jsx",
+		"bookmarks": [
+			{
+				"line": 143,
+				"column": 34,
+				"label": ""
+			}
+		]
+	}
+]
