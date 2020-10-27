@@ -124,11 +124,10 @@ class Admin extends Component {
         break;
     }
     _notificationSystem.addNotification({
-      title: <span data-notify="icon" className="pe-7s-gift" />,
+      title: <span data-notify="icon" className="pe-7s-study" />,
       message: (
         <div>
-          Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for
-          every web developer.
+          Bem vindo! sistema desenvolvido com apoio da <b>Universidade Federal Fluminense</b> 
         </div>
       ),
       level: level,

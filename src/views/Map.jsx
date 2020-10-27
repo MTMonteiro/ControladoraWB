@@ -48,14 +48,14 @@ export default function Map() {
   }, test);
 
   return (
-    <div className="content">
-      <Container fluid>
+    <div className="content" style={{display: "flex", alignItems:"column"}}>
+      <Container fluid style={{ alignItems: "center", justifyContent:"center", flexDirection:"column" }}>
         <Row>
           <Col md={12}>
             <Card
               title="Mapa de cobertura"
               ctAllIcons
-              category="map"
+              category="mapas"
               content={
                 <Container>
                   <MapSvg ref={svgRef}></MapSvg>

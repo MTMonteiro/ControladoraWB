@@ -31,7 +31,7 @@ class Icons extends Component {
               <Card
                 hCenter
                 title="Upgrade para controladora PRO"
-                category="Are you looking for more components? Please check our Premium Version of Light Bootstrap Dashboard React."
+                category="Precisa de mais componentes? Confira nossa versão PRO."
                 ctTableResponsive
                 ctTableFullWidth
                 ctTableUpgrade
@@ -47,8 +47,8 @@ class Icons extends Component {
                     <tbody>
                       <tr>
                         <td>Dispositivos</td>
-                        <td>30</td>
-                        <td>60</td>
+                        <td>5</td>
+                        <td>5+</td>
                       </tr>
                       <tr>
                         <td>Automação</td>
@@ -56,9 +56,9 @@ class Icons extends Component {
                         <td>Sim</td>
                       </tr>
                       <tr>
-                        <td>Example Pages</td>
-                        <td>7</td>
-                        <td>24</td>
+                        <td>Dashboards</td>
+                        <td>1</td>
+                        <td>1+</td>
                       </tr>
                       
                       <tr>
@@ -70,10 +70,23 @@ class Icons extends Component {
                           <i className="fa fa-check text-success" />
                         </td>
                       </tr>
+
                       <tr>
+                        <td>Firewall</td>
+                        <td>
+                          <i className="fa fa-times text-danger" />
+                        </td>
+                        <td>
+                          <i className="fa fa-check text-success" />
+                        </td>
+                      </tr>
+
+                      <tr>
+                      
+
                         <td />
                         <td>Free</td>
-                        <td>Just $49</td>
+                        <td>Apenas R$ 499,99</td>
                       </tr>
                       <tr>
                         <td />

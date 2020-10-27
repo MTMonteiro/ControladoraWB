@@ -1,26 +1,9 @@
-/*!
-
-=========================================================
-* Light Bootstrap Dashboard React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
 import Menu from "../Menu";
 
-import logo from "../../assets/img/reactlogo.png";
+import logo from "../../assets/img/RedeOn.jpeg";
 
 
 class Sidebar extends Component {
@@ -56,21 +39,23 @@ class Sidebar extends Component {
           ) : (
             null
           )}
-        <div className="logo">
+        <div className="logo" style={{backgroundColor:"white"}}>
           <a
             href="/"
             className="simple-text logo-mini"
           >
-            <div className="logo-img">
+            <div className="logo-img" style={{ marginTop:"-9px"}}>
               <img src={logo} alt="logo_image" />
             </div>
           </a>
           <a
-            href="/"
+            href="https://redeoncorp.com.br/"
             className="simple-text logo-normal"
+            style={{color:"rgb(163, 39, 39)", fontWeight: 900 }}
           >
-            Controladora
+            RedeOn Corp
           </a>
+
         </div>
         <div className="sidebar-wrapper">
           <ul className="nav">

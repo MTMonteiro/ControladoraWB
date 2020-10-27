@@ -21,6 +21,10 @@ import { Container, Row, Col, Table } from "react-bootstrap";
 import Card from "../components/Card/Card.jsx";
 import { thArray, tdArray } from "../variables/Variables.jsx";
 
+var usersTable = require("../actions/SNMP/test.json")
+
+console.log("usersTable",usersTable)
+
 class TableList extends Component {
   render() {
     return (
@@ -29,26 +33,27 @@ class TableList extends Component {
           <Row>
             <Col md={12}>
               <Card
-                title="Striped Table with Hover"
-                category="Here is a subtitle for this table"
+                title="Clientes wireless"
+                category="Dispositivos conectados na rede wifi"
                 ctTableFullWidth
                 ctTableResponsive
                 content={
                   <Table striped hover>
                     <thead>
                       <tr>
-                        {thArray.map((prop, key) => {
-                          return <th key={key}>{prop}</th>;
-                        })}
+                          <th >MAC</th>
+                          <th >IP</th>
+                          <th >POTÊNCIA</th>
                       </tr>
                     </thead>
                     <tbody>
-                      {tdArray.map((prop, key) => {
+                      {usersTable.map((data, key) => {
+                        console.log(data)
                         return (
                           <tr key={key}>
-                            {prop.map((prop, key) => {
-                              return <td key={key}>{prop}</td>;
-                            })}
+                            <td key={key}>{data.mac}</td>
+                            <td key={key}>{data.ap}</td>
+                            <td key={key}>{data.potencia}</td>
                           </tr>
                         );
                       })}
@@ -58,7 +63,7 @@ class TableList extends Component {
               />
             </Col>
 
-            <Col md={12}>
+            {/* <Col md={12}>
               <Card
                 plain
                 title="Striped Table with Hover"
@@ -88,7 +93,7 @@ class TableList extends Component {
                   </Table>
                 }
               />
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </div>
